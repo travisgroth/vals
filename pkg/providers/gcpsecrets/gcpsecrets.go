@@ -14,7 +14,7 @@ import (
 	"github.com/variantdev/vals/pkg/api"
 )
 
-// Format: ref+secretmanager://project/mykey[?version=VERSION]#/yaml_or_json_key/in/secret
+// Format: ref+gcpsecrets://project/mykey[?version=VERSION]#/yaml_or_json_key/in/secret
 type provider struct {
 	client  *sm.Client
 	ctx     context.Context
